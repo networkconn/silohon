@@ -1,0 +1,126 @@
+.silohon_search_result{
+    margin: 40px 0;
+    font-family: 'Oswald';
+    font-size: 28px;
+    justify-content: center;
+    width: max-content;
+    border-bottom: 1px solid var(--link);
+}
+span.span_search_result{
+    color: var(--hover);
+}
+
+/* For Not Found Result */
+.pages_404{
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    margin: 40px auto;
+    text-align: center;
+}
+.header_404 .title_404{
+    font-size: 60px;
+    font-family: 'Anton';
+    color: var(--p2);
+    letter-spacing: 3px;
+}
+.header_404 .p_404{
+    font-size: 17px;
+    margin-top: 25px;
+    color: var(--p2);
+}
+
+.reslated_404_section{
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    transform: skew(-10deg);
+    margin-bottom: 10px;
+}
+span.related_404_title{
+    background-color: var(--link);
+    color: #fff;
+    padding: 5px 10px;
+    font-family: 'Oswald';
+}
+span.related_404_title::before{
+    width: 100%;
+    position: absolute;
+    content: '';
+    height: 2px;
+    background-color: var(--link);
+    z-index: -1;
+    left: 0;
+    top: 50%;
+}
+.related_404{
+    position: relative;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+.related_404 a.link_404{
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+}
+a.link_404 img{
+    width: 100%;
+    height: 150px;
+    object-position: center;
+    object-fit: cover;
+}
+.body_404{
+    box-sizing: border-box;
+    position: relative;
+}
+.body_404 .metas{
+    color: var(--p2);
+    font-size: 12px;
+}
+.body_404 .the_404_title{
+    font-family: 'Oswald';
+    color: #000;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 20px;
+}
+@media(max-width:780px){
+    .related_404{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .related_404 a.link_404{
+        display: grid;
+        grid-template-columns: 110px auto;
+        grid-gap: 10px;
+        text-align: left;
+    }
+    a.link_404 img{
+        width: 110px;
+        height: 110px;
+    }
+}
+@media(max-width:580px){
+    .header_404 .title_404{
+        font-size: 50px;
+    }
+    .header_404 .p_404{
+        font-size: 22px;
+    }
+    .related_404{
+        position: relative;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .related_404 a.link_404{
+        grid-template-columns: 90px auto;
+    }
+    a.link_404 img{
+        width: 90px;
+        height: 90px;
+    }
+}

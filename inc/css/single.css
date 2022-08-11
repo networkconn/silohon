@@ -1,0 +1,409 @@
+/* Single Post Css */
+.silohon_single_post{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
+}
+
+/* Css For Article */
+.silohon_article{
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.silohon_article_top .single_cat .post-categories{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    transform: skew(-10deg);
+    position: relative;
+}
+.post-categories li a{
+    text-decoration: none;
+    background-color: var(--link);
+    color: #fff;
+    font-family: 'Oswald';
+    padding: 5px 10px;
+}
+.single_post_title{
+    font-family: 'Anton';
+    font-size: 50px;
+    color: #000;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    line-height: 60px;
+}
+.silohon_article_top .post_meta{
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}
+.silohon_article_top .post_meta img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-position: center;
+    object-fit: cover;
+    border: 1px solid var(--link);
+}
+.post_meta .post_meta_r{
+    display: flex;
+    flex-direction: column;
+}
+.post_meta .post_meta_r .author_names{
+    font-family: 'Oswald';
+    color: #000;
+    font-size: 16px;
+}
+.post_meta .post_meta_r .date_publis{
+    font-family: 'Oswald';
+    color: var(--p2);
+    font-size: 14px;
+    margin-top: 5px;
+}
+.silohon_article_top img{
+    width: 100%;
+    height: 450px;
+    margin-bottom: 20px;
+    object-position: center;
+    object-fit: cover;
+}
+.silohon_the_content{
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.silohon_the_content p,
+.silohon_the_content ul,
+.silohon_the_content ol{
+    font-size: 18px;
+    color: var(--p2);
+    line-height: 2rem;
+    margin-bottom: 1.7rem;
+}
+.silohon_the_content p a,
+.silohon_the_content ul a,
+.silohon_the_content ol a{
+    color: var(--hover);
+    text-decoration: none;
+}
+.silohon_the_content h1,
+.silohon_the_content h2,
+.silohon_the_content h3,
+.silohon_the_content h4,
+.silohon_the_content h5,
+.silohon_the_content h6{
+    font-family: 'Anton';
+    letter-spacing: 1px;
+    color: var(--p);
+    line-height: 2rem;
+    margin-bottom: 10px;
+}
+.silohon_the_content h2{
+    font-size: 27px;
+}
+.silohon_the_content h3{
+    font-size: 22px;
+}
+.silohon_the_content h4{
+    font-size: 19px;
+}
+.silohon_the_content h5{
+    font-size: 17px;
+}
+.silohon_the_content h6{
+    font-size: 15px;
+}
+.silohon_the_content ul li{
+    list-style: square;
+    margin-left: 22px;
+}
+.silohon_the_content ol li{
+    list-style: decimal;
+    margin-left: 22px;
+}
+.silohon_the_content table{
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: var(--p);
+}
+.silohon_the_content table thead{
+    text-align: left;
+    background-color: var(--link);
+    box-sizing: border-box;
+    color: #fff;
+}
+.silohon_the_content table thead tr th{
+    padding: 5px 10px;
+    font-size: 17px;
+    box-sizing: border-box;
+}
+.silohon_the_content table tbody{
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 2rem;
+}
+.silohon_the_content table tbody tr td{
+    border-bottom: 1px solid var(--link);
+    padding-left: 10px;
+}
+@media(max-width:780px){
+    /* Single Post Css */
+    .silohon_single_post{
+        grid-template-columns: 1fr;
+    }
+    .silohon_article_top .post_meta{
+        align-items: flex-start;
+    }
+    .silohon_article_top .post_meta img{
+        width: 40px;
+        height: 40px;
+    }
+    .silohon_article_top img{
+        height: 380px;
+    }
+}
+@media(max-width:580px){
+    .single_post_title{
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 10px;
+    }
+    .silohon_article_top img.img_thumbnail_posts{
+        width: calc(100% + 40px);
+        height: 250px;
+        margin-bottom: 15px;
+        margin-left: -20px;
+        margin-top: -10px;
+    }
+    .silohon_the_content{
+        position: relative;
+        width: 100%;
+    }
+    .silohon_the_content p{
+        position: relative;
+        width: 100%;
+    }
+    .silohon_the_content p,
+    .silohon_the_content ul,
+    .silohon_the_content ol{
+        font-size: 17px;
+        color: var(--p2);
+        line-height: 2rem;
+        margin-bottom: 1.7rem;
+    }
+    .silohon_the_content p img{
+        min-width: calc(100% + 40px);
+        max-width: calc(100% + 40px);
+        margin-left: -20px;
+        margin-bottom: -15px;
+    }
+    .silohon_the_content h2{
+        font-size: 26px;
+    }
+    .silohon_the_content h3{
+        font-size: 21px;
+    }
+    .silohon_the_content h4{
+        font-size: 18px;
+    }
+    .silohon_the_content h5{
+        font-size: 16px;
+    }
+    .silohon_the_content h6{
+        font-size: 14px;
+    }
+    .silohon_the_content table{
+        font-size: 16px;
+    }
+}
+
+/* For Sidebar */
+.silohon_sidebar{
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.widget_title{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    transform: skew(-10deg);
+    position: relative;
+}
+.widget_title .silohon_widget_title{
+    background-color: var(--link);
+    padding: 5px 10px;
+    font-family: 'Oswald';
+    color: #fff;
+}
+.silohon_widget_title::before{
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    background-color: var(--link);
+    left: 0;
+    top: 50%;
+    z-index: -1;
+}
+.silohon_sidebar form.silohon_search{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    height: 35px;
+    margin-bottom: 20px;
+}
+form.silohon_search input{
+    width: 85%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid var(--link);
+}
+form.silohon_search input:focus{
+    outline: none;
+}
+form.silohon_search button{
+    width: 15%;
+    border: none;
+    background: var(--link);
+    padding: 5px;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+form.silohon_search button img{
+    height: 100%;
+    width: auto;
+}
+
+/* Sidebar Popular Posts Css */
+.silohon_the_popular{
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.silohon_the_popular a.the_popular_link{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 90px auto;
+    grid-gap: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+a.the_popular_link img{
+    width: 90px;
+    height: 90px;
+    object-position: center;
+    object-fit: cover;
+}
+.the_popular_link .the_popular_body{
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.the_popular_body .metas{
+    font-size: 12px;
+    color: var(--p);
+}
+.the_popular_body .the_popular_title{
+    font-family: 'Oswald';
+    font-size: 16px;
+    color: #000;
+    margin-top: 7px;
+    line-height: 20px;
+}
+
+@media(max-width:780px){
+    .grid_lates{
+        grid-template-columns: 1fr;
+    }
+    .section_10 li{
+        margin-bottom: 25px;
+    }
+    /* Pagination */
+    .silohon_pagination{
+        margin-bottom: 50px;
+    }
+    /* Sidebar Search */
+    .widget_title{
+        text-align: center;
+    }
+    /* Sidebar Popular Posts Css */
+    .silohon_the_popular{
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .silohon_the_popular a.the_popular_link{
+        display: grid;
+        grid-template-columns: 100px auto;
+        grid-gap: 10px;
+    }
+    a.the_popular_link img{
+        width: 100px;
+        height: 100px;
+    }
+    .the_popular_body .metas{
+        font-size: 14px;
+    }
+    .the_popular_body .the_popular_title{
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+@media(max-width:580px){
+    .grid_lates{
+        grid-template-columns: 1fr;
+    }
+    .section_10 li:nth-child(1) .section_10_link{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .section_10 li:nth-child(1) .section_10_link img{
+        width: 100%;
+        height: 200px;
+    }
+    .section_10 li:nth-child(1) .section_10_body{
+        margin-bottom: 20px;
+    }
+    .section_10 li:nth-child(1) .section_10_body .section_10_title{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .section_10 li .section_10_link{
+        grid-template-columns: 90px auto;
+    }
+    .section_10_link img{
+        width: 90px;
+        height: 90px;
+    }
+    .section_10_body .section_10_title{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .section_10_body p{
+        display: none;
+    }
+    
+    /* Pagination */
+    .silohon_pagination{
+        margin-top: 40px;
+        text-align: center;
+    }
+    /* Sidebar Popular Posts Css */
+    .silohon_the_popular{
+        display: block;
+    }
+}

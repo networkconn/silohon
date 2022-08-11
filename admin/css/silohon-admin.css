@@ -1,0 +1,37 @@
+/* Include Font */
+@font-face {
+    font-family: 'Anton';
+    src: url('/wp-content/themes/silohon/inc/fonts/anton-regular-webfont.woff2') format('woff2'),
+        url('/wp-content/themes/silohon/inc/fonts/anton-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('/wp-content/themes/silohon/inc/fonts/oswald-variablefont_wght-webfont.woff2') format('woff2'),
+        url('/wp-content/themes/silohon/inc/fonts/oswald-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pt Serif';
+    src: url('/wp-content/themes/silohon/inc/fonts/ptserif-regular-webfont.woff2') format('woff2'),
+        url('/wp-content/themes/silohon/inc/fonts/ptserif-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.silohon_title_admin{
+    font-family: 'Anton';
+    color: #464444;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+img.img_preview{
+    width: 300px;
+    height: auto;
+}
+
+form.silohon_form{
+    font-family: 'Oswald';
+}

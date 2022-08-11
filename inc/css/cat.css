@@ -1,0 +1,275 @@
+/* Category Css */
+.silohon_sec{
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 30px;
+    width: 100%;
+}
+.grid_lates{
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 10px;
+}
+.latest_section{
+    position: relative;
+    box-sizing: border-box;
+}
+.section_10 li{
+    margin-bottom: 20px;
+}
+.section_10 li .section_10_link{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 10px;
+    text-decoration: none;
+}
+.section_10_link img{
+    width: 100%;
+    height: 220px;
+    object-position: center;
+    object-fit: cover;
+}
+.metas{
+    font-size: 12px;
+    color: var(--p);
+}
+.section_10_body .section_10_title{
+    margin-top: 10px;
+    color: #000;
+    font-family: 'Oswald';
+    font-size: 30px;
+    line-height: 35px;
+}
+.section_10_body p{
+    color: var(--p);
+    font-size: 16px;
+    line-height: 2rem;
+}
+
+/* Pagination */
+.silohon_pagination{
+    width: 100%;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+.silohon_pagination span.current{
+    background-color: var(--hover);
+}
+.silohon_pagination .page-numbers{
+    background-color: var(--link);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Oswald';
+    font-size: 14px;
+}
+
+/* Sidebar Search */
+.silohon_sidebar{
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.widget_title{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    transform: skew(-10deg);
+    position: relative;
+}
+.widget_title .silohon_widget_title{
+    background-color: var(--link);
+    padding: 5px 10px;
+    font-family: 'Oswald';
+    color: #fff;
+}
+.silohon_widget_title::before{
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    background-color: var(--link);
+    left: 0;
+    top: 50%;
+    z-index: -1;
+}
+.silohon_sidebar form.silohon_search{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    height: 35px;
+    margin-bottom: 20px;
+}
+form.silohon_search input{
+    width: 85%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid var(--link);
+}
+form.silohon_search input:focus{
+    outline: none;
+}
+form.silohon_search button{
+    width: 15%;
+    border: none;
+    background: var(--link);
+    padding: 5px;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+form.silohon_search button img{
+    height: 100%;
+    width: auto;
+}
+
+/* Sidebar Popular Posts Css */
+.silohon_the_popular{
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.silohon_the_popular a.the_popular_link{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 90px auto;
+    grid-gap: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+a.the_popular_link img{
+    width: 90px;
+    height: 90px;
+    object-position: center;
+    object-fit: cover;
+}
+.the_popular_link .the_popular_body{
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.the_popular_body .metas{
+    font-size: 12px;
+    color: var(--p);
+}
+.the_popular_body .the_popular_title{
+    font-family: 'Oswald';
+    font-size: 16px;
+    color: #000;
+    margin-top: 7px;
+    line-height: 20px;
+}
+
+@media(max-width:780px){
+    .grid_lates{
+        grid-template-columns: 1fr;
+    }
+    .section_10 li{
+        margin-bottom: 25px;
+    }
+    /* Pagination */
+    .silohon_pagination{
+        margin-bottom: 50px;
+    }
+    /* Sidebar Search */
+    .widget_title{
+        text-align: center;
+    }
+    /* Sidebar Popular Posts Css */
+    .silohon_the_popular{
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .silohon_the_popular a.the_popular_link{
+        display: grid;
+        grid-template-columns: 100px auto;
+        grid-gap: 10px;
+    }
+    a.the_popular_link img{
+        width: 100px;
+        height: 100px;
+    }
+    .the_popular_body .metas{
+        font-size: 14px;
+    }
+    .the_popular_body .the_popular_title{
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+@media(max-width:580px){
+    .grid_lates{
+        grid-template-columns: 1fr;
+    }
+    .section_10 li:nth-child(1) .section_10_link{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .section_10 li:nth-child(1) .section_10_link img{
+        width: 100%;
+        height: 200px;
+    }
+    .section_10 li:nth-child(1) .section_10_body{
+        margin-bottom: 20px;
+    }
+    .section_10 li:nth-child(1) .section_10_body .section_10_title{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .section_10 li .section_10_link{
+        grid-template-columns: 90px auto;
+    }
+    .section_10_link img{
+        width: 90px;
+        height: 90px;
+    }
+    .section_10_body .section_10_title{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .section_10_body p{
+        display: none;
+    }
+    
+    /* Pagination */
+    .silohon_pagination{
+        margin-top: 40px;
+        text-align: center;
+    }
+    /* Sidebar Popular Posts Css */
+    .silohon_the_popular{
+        display: block;
+    }
+}
+
+/* For Nothing Posts */
+.pages_404{
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    margin: 40px auto;
+    text-align: center;
+}
+.header_404 .title_404{
+    font-size: 60px;
+    font-family: 'Anton';
+    color: var(--p2);
+    letter-spacing: 3px;
+}
+.header_404 .p_404{
+    font-size: 26px;
+    line-height: 30px;
+    font-family: 'Anton';
+    margin-top: 25px;
+    color: var(--p2);
+}
