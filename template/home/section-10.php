@@ -13,7 +13,7 @@
                     'category_name' => get_option('option_section_10'),
                 )); while($option_section_10->have_posts()) : $option_section_10->the_post(); ?>
                 <li>
-                    <a href="<?php the_permalink(); ?>" class="section_10_link">
+                    <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>" class="section_10_link">
                         <?php if(has_post_thumbnail()) : $lazyload_image = SILOHON_URI . '/img/lazy.jpg'; ?>
                         <img width="150" height="150" src="<?php echo $lazyload_image; ?>" data-src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                         <?php else : ?>

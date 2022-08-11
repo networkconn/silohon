@@ -9,7 +9,7 @@ if(get_option('option_for_hero') != '' && get_option('option_for_hero') != 'fals
     <section class="silohon_hero">
         <?php while($hero->have_posts()) : $hero->the_post(); $count++; ?>
         <?php if($count==1){ ?>
-        <a href="<?php the_permalink(); ?>" class="hero_link">
+        <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>" class="hero_link">
             <?php if(has_post_thumbnail()) : $lazyload_image = SILOHON_URI . '/img/lazy.jpg'; ?>
             <img width="150" height="150" src="<?php echo $lazyload_image; ?>" data-src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
             <?php else : ?>
@@ -31,7 +31,7 @@ if(get_option('option_for_hero') != '' && get_option('option_for_hero') != 'fals
         </a>
         <div class="silohon_hiro_child container">
         <?php } else { ?>
-            <a href="<?php the_permalink(); ?>" class="hero_child_link">
+            <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>" class="hero_child_link">
                 <?php if(has_post_thumbnail()) : $lazyload_image = SILOHON_URI . '/img/lazy.jpg'; ?>
                 <img width="150" height="150" src="<?php echo $lazyload_image; ?>" data-src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                 <?php else : ?>

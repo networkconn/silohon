@@ -10,7 +10,7 @@
             'posts_per_page' => 2,
             'category_name' => get_option('option_section_3'),
         )); while($option_section_3->have_posts()) : $option_section_3->the_post(); ?>
-        <a href="<?php the_permalink(); ?>" class="link_grid2">
+        <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>" class="link_grid2">
             <?php if(has_post_thumbnail()) : $lazyload_image = SILOHON_URI . '/img/lazy.jpg'; ?>
             <img width="150" height="150" src="<?php echo $lazyload_image; ?>" data-src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
             <?php else : ?>
@@ -33,7 +33,7 @@
         )); $count=0; ?>
         <?php while($option_section_3->have_posts()) : $option_section_3->the_post(); $count++; ?>
         <?php if($count==3 || $count==4 || $count==5 || $count==6) : ?>
-        <a href="<?php the_permalink(); ?>" class="link_grid4">
+        <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>" class="link_grid4">
             <?php if(has_post_thumbnail()) : $lazyload_image = SILOHON_URI . '/img/lazy.jpg'; ?>
             <img width="150" height="150" src="<?php echo $lazyload_image; ?>" data-src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
             <?php else : ?>

@@ -16,7 +16,7 @@
 </div>
 <div class="related_404">
     <?php while($not_pound->have_posts()) : $not_pound->the_post(); ?>
-    <a href="<?php the_permalink(); ?>" class="link_404">
+    <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>" class="link_404">
         <img width="150" height="150" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
         <div class="body_404">
             <span class="metas">

@@ -13,7 +13,7 @@
             )); $count=0; ?>
             <?php while($option_section_8->have_posts()) : $option_section_8->the_post(); $count++; ?>
             <?php if($count==2 || $count==3) : ?>
-            <a href="<?php the_permalink(); ?>" class="grid3A_link">
+            <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>" class="grid3A_link">
                 <?php if(has_post_thumbnail()) : $lazyload_image = SILOHON_URI . '/img/lazy.jpg'; ?>
                 <img width="150" height="150" src="<?php echo $lazyload_image; ?>" data-src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                 <?php else : ?>
@@ -34,7 +34,7 @@
                 'posts_per_page' => 1,
                 'category_name' => get_option('option_section_8'),
             )); while($option_section_8->have_posts()) : $option_section_8->the_post(); ?>
-            <a href="<?php the_permalink(); ?>" class="grid3B_link">
+            <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>" class="grid3B_link">
                 <?php if(has_post_thumbnail()) : $lazyload_image = SILOHON_URI . '/img/lazy.jpg'; ?>
                 <img width="150" height="150" src="<?php echo $lazyload_image; ?>" data-src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                 <?php else : ?>
@@ -57,7 +57,7 @@
             )); $count=0; ?>
             <?php while($option_section_8->have_posts()) : $option_section_8->the_post(); $count++; ?>
             <?php if($count==4 || $count==5 || $count==6 || $count==7 || $count==8 || $count==9) : ?>
-            <a href="<?php the_permalink(); ?>" class="grid3C_link">
+            <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>" class="grid3C_link">
                 <?php if(has_post_thumbnail()) : $lazyload_image = SILOHON_URI . '/img/lazy.jpg'; ?>
                 <img width="150" height="150" src="<?php echo $lazyload_image; ?>" data-src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                 <?php else : ?>
