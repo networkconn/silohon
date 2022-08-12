@@ -12,14 +12,15 @@
     box-sizing: border-box;
     position: relative;
 }
-.silohon_article_top .single_cat .post-categories{
+.silohon_article_top .single_cat{
     width: 100%;
     box-sizing: border-box;
     text-align: left;
     transform: skew(-10deg);
     position: relative;
+    display: flex;
 }
-.post-categories li a{
+.single_cat a{
     text-decoration: none;
     background-color: var(--link);
     color: #fff;
@@ -406,4 +407,264 @@ a.the_popular_link img{
     .silohon_the_popular{
         display: block;
     }
+}
+
+/* Silohon Sosial Share Post */
+.silohon_sosial_share{
+    margin: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.silohon_sosial_share .silo_sosial_share{
+    margin-left: 5px;
+    background-color: var(--link);
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* For Related Post */
+.reslated_404_section{
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    transform: skew(-10deg);
+    margin-bottom: 10px;
+}
+span.related_404_title{
+    background-color: var(--link);
+    color: #fff;
+    padding: 5px 10px;
+    font-family: 'Oswald';
+}
+span.related_404_title::before{
+    width: 100%;
+    position: absolute;
+    content: '';
+    height: 2px;
+    background-color: var(--link);
+    z-index: -1;
+    left: 0;
+    top: 50%;
+}
+.related_404{
+    position: relative;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 30px;
+}
+.related_404 a.link_404{
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+}
+a.link_404 img{
+    width: 100%;
+    height: 120px;
+    object-position: center;
+    object-fit: cover;
+}
+.body_404{
+    box-sizing: border-box;
+    position: relative;
+}
+.body_404 .metas{
+    color: var(--p2);
+    font-size: 12px;
+}
+.body_404 .the_404_title{
+    font-family: 'Oswald';
+    color: #000;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 20px;
+}
+@media(max-width:780px){
+    .related_404{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .related_404 a.link_404{
+        display: grid;
+        grid-template-columns: 110px auto;
+        grid-gap: 10px;
+        text-align: left;
+    }
+    a.link_404 img{
+        width: 110px;
+        height: 110px;
+    }
+}
+@media(max-width:580px){
+    .header_404 .title_404{
+        font-size: 50px;
+    }
+    .header_404 .p_404{
+        font-size: 22px;
+    }
+    .related_404{
+        position: relative;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .related_404 a.link_404{
+        grid-template-columns: 90px auto;
+    }
+    a.link_404 img{
+        width: 90px;
+        height: 90px;
+    }
+}
+
+/* For Comment Posts */
+.comments-area{
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 40px;
+}
+.comments-area .commets-title{
+    margin-bottom: -25px;
+    color: var(--link);
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--link);
+}
+.comments-list{
+    margin-bottom: 30px;
+}
+.comment-meta .comment-author{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.comment-meta .comment-author img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: var(--link) 1px solid;
+    object-position: center;
+    object-fit: cover;
+}
+.comment-meta .comment-author .fn a{
+    color: var(--p);
+    font-family: 'Oswald';
+    text-decoration: none;
+    font-size: 16px;
+}
+.comment-metadata{
+    margin-bottom: 10px;
+}
+.comment-metadata a{
+    color: var(--p2);
+    padding-right: 10px;
+    text-decoration: none;
+    font-family: 'Oswald';
+    font-size: 12px;
+}
+.comment-content{
+    margin-bottom: 10px;
+}
+.comment-content p{
+    font-size: 18px;
+    color: var(--p);
+    line-height: 2rem;
+}
+.reply a{
+    color: var(--hover);
+    text-decoration: none;
+    font-family: 'Oswald';
+    font-size: 12px;
+}
+/* Pagination Comment */
+.silo_paginate_comment{
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.silo_prev a, .silo_next a{
+    text-decoration: none;
+    background-color: var(--link);
+    color: #fff;
+    font-family: 'Oswald';
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 3px;
+}
+.silo_prev a:hover, .silo_next a:hover{
+    background-color: var(--hover);
+}
+
+/* Reply Comments */
+.comment-respond{
+    width: 100%;
+    box-sizing: border-box;
+}
+.comment-respond .comment-reply-title{
+    font-family: 'Oswald';
+    margin-bottom: 10px;
+}
+.comment-respond .comment-form .comment-notes{
+    margin-bottom: 10px;
+}
+.comment-form .comment-form-comment{
+    display: flex;
+    flex-direction: column;
+}
+.comment-form .comment-form-comment label{
+    font-family: 'Oswald';
+    font-size: 16px;
+    color: var(--p);
+    margin-bottom: 5px;
+}
+.comment-form .comment-form-comment textarea{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.comment-form .comment-form-author,
+.comment-form .comment-form-email,
+.comment-form .comment-form-url{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.comment-form .comment-form-author label,
+.comment-form .comment-form-email label,
+.comment-form .comment-form-url label{
+    font-size: 16px;
+    font-family: 'Oswald';
+}
+.comment-form .comment-form-author input,
+.comment-form .comment-form-email input,
+.comment-form .comment-form-url input{
+    height: 25px;
+    width: 100%;
+    max-width: 450px;
+}
+.comment-form-cookies-consent{
+    margin-bottom: 10px;
+    font-family: 'Oswald';
+    font-size: 15px;
+    color: var(--p2);
+}
+.form-submit input.submit{
+    padding: 10px;
+    font-family: 'Oswald';
+    margin-top: 10px;
+    border: none;
+    background-color: var(--link);
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.form-submit input.submit:hover{
+    background-color: var(--hover);
 }

@@ -18,6 +18,18 @@ add_settings_field( 'silohon-show-thumbnail', 'The Post Thumbnail',
         </select>
     <?php }
 
+// For sosial Shares posts
+register_setting( 'silohon-post-settings', 'silo_shares' );
+add_settings_field( 'siloh-shares', 'Share Button', 'sosial_share_silohon',
+    'silohon_posts_option', 'silohon-single-post-thumb' );
+    function sosial_share_silohon(){ ?>
+        <select name="silo_shares" id="silo_shares">
+            <option value="" <?php if(get_option('silo_shares') == '') : echo 'selected'; endif; ?>>Choose</option>
+            <option value="true" <?php if(get_option('silo_shares') == 'true') : echo 'selected'; endif; ?>>Show</option>
+            <option value="false" <?php if(get_option('silo_shares') == 'false') : echo 'selected'; endif; ?>>Hiden</option>
+        </select>
+    <?php }
+
 // The Next & Prev Posts
 register_setting( 'silohon-post-settings', 'silohon_next_prev' );
 add_settings_field( 'silo-next-prev', 'Next & Prev', 'silo_next_prev',

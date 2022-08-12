@@ -2,7 +2,7 @@
 * Theme Name: Silohon
 * Theme URI: https://theme.silohon.com
 * Version: 1.0
-* Description: Theme desing for blog, wordpress news, Grid designe, Responsive, and Fast Loading blog, and Lazy load withput plugins.
+* Description: Fast Load, mendukung lazyload Image, Lazyload Iklan Google, custom blok iklan, dan partisi Css.
 * Tags: Grid Layouts, Fast Load, Lazy Load Image, Blog, Responsive
 * Author: Nur Akbar
 * Author URI: https://github.com/silohon
@@ -49,22 +49,22 @@ img{
 /* Include Font */
 @font-face {
     font-family: 'Anton';
-    src: url('/wp-content/themes/silohon/inc/fonts/anton-regular-webfont.woff2') format('woff2'),
-        url('/wp-content/themes/silohon/inc/fonts/anton-regular-webfont.woff') format('woff');
+    src: url('inc/fonts/anton-regular-webfont.woff2') format('woff2'),
+        url('inc/fonts/anton-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Oswald';
-    src: url('/wp-content/themes/silohon/inc/fonts/oswald-variablefont_wght-webfont.woff2') format('woff2'),
-        url('/wp-content/themes/silohon/inc/fonts/oswald-variablefont_wght-webfont.woff') format('woff');
+    src: url('inc/fonts/oswald-variablefont_wght-webfont.woff2') format('woff2'),
+        url('inc/fonts/oswald-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Pt Serif';
-    src: url('/wp-content/themes/silohon/inc/fonts/ptserif-regular-webfont.woff2') format('woff2'),
-        url('/wp-content/themes/silohon/inc/fonts/ptserif-regular-webfont.woff') format('woff');
+    src: url('inc/fonts/ptserif-regular-webfont.woff2') format('woff2'),
+        url('inc/fonts/ptserif-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

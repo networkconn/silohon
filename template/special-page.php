@@ -16,15 +16,9 @@ if(get_option('option_for_hero') != '' && get_option('option_for_hero') != 'fals
             <img width="150" height="150" src="<?php echo $lazyload_image; ?>" alt="<?php the_title(); ?>">
             <?php endif; ?>
             <div class="silohon_hero_body">
-                <span class="meta"><?php $cat_counter = count( get_the_terms( $post->ID, 'category') );
-                    $i = 0; foreach( (get_the_category()) as $category ){
-                        $i = $i + 1;
-                        while( $i < $cat_counter){
-                            echo $category->cat_name . ' ';
-                            break;
-                        }
-                    } echo $category->cat_name; ?>
-                </span> <span class="meta">/</span> <span class="meta"><?php the_time('F d, Y'); ?></span>
+                <span class="meta"><?php silohon_meta_cat__(); ?></span>
+                <span class="meta">/</span>
+                <span class="meta"><?php silohon_the_time(); ?></span>
                 <?php the_title('<h2 class="hero_title">', '</h2>'); ?>
                 <?php the_excerpt(); ?>
             </div>
